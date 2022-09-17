@@ -82,3 +82,29 @@ test("There are at least 500 words on the page", () => {
 
 const console = document.getElementById("tests");
 prettify.toHTML(run(), console);
+let element_list = document.getElementById('list');
+let new_li = document.createElement('li');
+let new_a = document.createElement('a');
+new_a.setAttribute("href", 'https://www.bbc.co.uk/news');
+new_a.innerText = 'BBC News';
+
+new_li.appendChild(new_a);
+
+element_list.appendChild(new_li);
+let new_li2 = document.createElement('li');
+let new_a2 = document.createElement('a');
+new_a2.setAttribute("href", 'https://twitter.com/');
+new_a2.innerText = 'Twitter';
+
+new_li2.appendChild(new_a2);
+
+element_list.appendChild(new_li2);
+let new_li3 = document.createElement('li');
+let new_a3 = document.createElement('a');
+new_a3.setAttribute("href", 'https://www.apple.com/uk/');
+new_a3.innerText = 'Apple';
+
+new_li3.appendChild(new_a3);
+
+element_list.appendChild(new_li3);
+
