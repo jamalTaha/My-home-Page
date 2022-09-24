@@ -4,6 +4,24 @@
   You can make this window bigger. 
    ===================
 */
+var links, websides;
+
+
+links = ['Twitter', 'BBC', 'Facebook', 'Wikipedia', 'Apple'];
+websides = ['https://twitter.com/', 'https://www.bbc.co.uk/', 'https://en-gb.facebook.com/', 'https://wikipedia.org/', 'https://www.apple.com/uk/'];
+while (!!websides.length) {
+  if(--window.LoopTrap <= 0) throw "Infinite loop.";
+  let element_list = document.getElementById('list');
+  let new_ul = document.createElement('ul');
+  let new_a = document.createElement('a');
+  new_a.setAttribute("href", websides.shift());
+  new_a.innerText = links.shift();
+
+  new_ul.appendChild(new_a);
+
+  element_list.appendChild(new_ul);
+}
+
 
 const {
   core: { test, expect, run },
