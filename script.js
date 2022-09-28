@@ -91,3 +91,27 @@ new_a3.innerText = 'Apple';
 new_li3.appendChild(new_a3);
 
 element_list.appendChild(new_li3);
+
+var images;
+
+
+images = ['https://i.postimg.cc/8CH3b7SC/20180907-142145.jpg', 'https://i.postimg.cc/BQPnw0t3/IMG-20180802-164807.jpg', 'https://i.postimg.cc/kXWwTLgT/IMG-20200823-200041.jpg'];
+
+let element_pictures = document.getElementById('pictures');
+images.push(images[0]);
+element_pictures.setAttribute("src", images.shift());
+
+
+document.getElementById('next').addEventListener('click', (event) => {
+  let element_pictures2 = document.getElementById('pictures');
+  images.push(images[0]);
+  element_pictures2.setAttribute("src", images.shift());
+
+});
+
+document.getElementById('previous').addEventListener('click', (event) => {
+  let element_pictures3 = document.getElementById('pictures');
+  images.push(images[0]);
+  element_pictures3.setAttribute("src", images.shift());
+
+});
