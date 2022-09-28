@@ -82,6 +82,29 @@ nav ul li a :hover{
     left:8%;
     transform: translateY(-50%)
 }
+#previous{
+   background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid ;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+
+#next{
+   background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid ;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
 
 h1{
     color: cyan;
